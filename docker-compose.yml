@@ -23,3 +23,6 @@ services:
     image: postgres:12
     volumes:
       - 'db-data:/var/lib/postgresql/data'
+    environment:
+      - 'POSTGRES_USER=postgres'
+      - 'POSTGRES_PASSWORD=postgres'
