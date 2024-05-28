@@ -18,6 +18,8 @@ services:
       - db
     links:
       - db
+    
+    command: bash -c "rails db:create && rails db:migrate && rails s -b 0.0.0.0"
 
   db:
     image: postgres:12
