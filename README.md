@@ -16,7 +16,7 @@ Dockerが未インストールの方は [こちらから](https://www.docker.com
 1. ターミナルを開いて、任意の場所に `git clone` コマンドでクローンしてください<br>例）HTTPS接続の場合<br>`$ git clone https://github.com/64-HiroByte/rails-docker.git`
 2. 作業ディレクトリ（rails-dockerディレクトリ）に移動します
 3. 次のコマンドを実行すると、アプリケーションが起動します<br>`$ docker-compose up -d`
-4. アプリケーションが起動したのを確認した後、次のコマンドを入力してデータベースの初期設定を行います<br>`$ docker-compose exec app bash`
+4. アプリケーションが起動したのを確認した後、次のコマンドを入力してデータベースの初期設定を行います<br>`$ docker-compose exec web bash`
 5. データベースの作成をします<br>`$ rails db:create`
 6. データベースのマイグレーションを実行します<br>`$ rails db:migrate`
 7. 初期設定後、お使いのWebブラウザを起動し、アドレスバーに `localhost:3000` と入力します
